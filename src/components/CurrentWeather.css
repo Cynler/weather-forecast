@@ -1,0 +1,32 @@
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    background: linear-gradient(#AED8CC, #ACB1D6);
+    border-radius: 10px;
+
+}
+.date {
+    font-size: 1.8rem;
+}
+.temperature {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.conditions {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.current-weather__icon {
+    font-size: 3rem;
+}

@@ -23,10 +23,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff;
+    background: linear-gradient(#461959, #CD6688);
     color: #fff;
     padding: 10px;
     border-radius: 8px 8px 0 0;
+}
+
+.current-weather {
+    margin-bottom: 40px;
+}
+
+.current-weather h2 {
+    margin-top: 40px;
 }
 
 .logo {
@@ -69,68 +77,6 @@ main {
     text-align: center;
 }
 
-.current-weather {
-    margin-bottom: 40px;
-}
-
-.weather-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.temperature {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.conditions {
-    font-size: 20px;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-.location {
-    font-size: 16px;
-    color: #555;
-}
-
-.forecast {
-    margin-bottom: 40px;
-}
-
-.forecast-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.forecast-item {
-    flex: 1;
-    padding: 15px;
-    margin: 10px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.date {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.forecast-item .conditions {
-    font-size: 14px;
-    color: #777;
-}
-
-.forecast-item .temperature {
-    font-size: 20px;
-}
 
 footer {
     text-align: center;
@@ -138,9 +84,14 @@ footer {
     color: #777;
 }
 
-    footer p {
-        font-size: 12px;
-    }
+footer p {
+    font-size: 12px;
+}
+
+.forecast {
+    margin-bottom: 40px;
+}
+
 
 .forecast-item .weather-icon {
     font-size: 32px;

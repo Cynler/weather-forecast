@@ -1,0 +1,33 @@
+h2 {
+    align-content: center;
+}
+.forecast-item {
+    flex: 1;
+    padding: 15px;
+    margin: 10px;
+    background: linear-gradient(#ACB1D6, #EAC7C7);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.forecast-item .conditions {
+    font-size: 0.8rem;
+}
+
+.forecast-item .temperature {
+    font-size: 1.4rem;
+}
+
+.forecast-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
