@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ForecastWeather.css';
 import findIcon from './findIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +12,7 @@ const ForecastWeather = ({ forecastData }) => {
         return <div>Loading forecast...</div>;
     }
 
-    const forecastList = forecastData.list.map((item, index) => ({
+    const forecastList = forecastData?.list?.map((item, index) => ({
         date: item?.dt,
         temp: item?.main?.temp,
         cond: item?.weather?.[0]?.main,
@@ -25,12 +25,12 @@ const ForecastWeather = ({ forecastData }) => {
 
   return (
     <div className="forecast-list">
-        {forecastList.map((item, index) => (
+        {forecastList?.map((item, index) => (
             <div className="forecast-item" key={index}>
-                <p className="date">{dateToWords(item.date)}</p>
-                <FontAwesomeIcon icon={["fas", findIcon(item.cond)]} className="current-weather__icon" />
-                <p className="temperature">{item.temp} °C</p>
-                <p className="conditions">{item.cond}</p>
+                <p className="date">{dateToWords(item?.date)}</p>
+                <FontAwesomeIcon icon={["fas", findIcon(item?.cond)]} className="current-weather__icon" />
+                <p className="temperature">{item?.temp} °C</p>
+                <p className="conditions">{item?.cond}</p>
             </div>
         ))}
     </div>

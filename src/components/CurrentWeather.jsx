@@ -25,7 +25,7 @@ const CurrentWeather = ({currentData}) => {
       <FontAwesomeIcon icon={["fas", findIcon(currentData?.weather?.[0]?.main)]} className="current-weather__icon" />
       <p className="temperature">{currentData?.main?.temp}°C</p>
       <p className="conditions">{currentData?.weather?.[0]?.main}</p>
-      <p className="location">{currentData?.name}</p>
+      <p className="location">{currentData?.name}, {currentData?.sys?.country}</p>
     </div>
   )
 };
