@@ -15,13 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 `npm run build` to build app for production
 
 ## TODO 
-
-- Connect to Flask
-- API keys
-- PyTorch plugin?
-- Implement UI, Tailwind or SASS? (base is fine)
-
-
+- Retune Fuzzy Search due to Geocode function changes
+- Mouse Hover UI elements AND/OR Menu bar 
 
 ### `npm run eject`
 
